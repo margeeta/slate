@@ -1,0 +1,129 @@
+/* fine imports __________________ */
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700);
+@import url(/css/normalize.css);
+
+/* body __________________________ */
+
+html, body {
+	font-family: 'Dosis', sans-serif;
+	line-height: 120%;
+    font-size: 1rem;
+	color: #2a2a2a;
+	text-rendering: optimizeLegibility;
+	font-smooth:always;
+	-webkit-font-smoothing: subpixel-antialiased;
+	}
+
+/* links __________________________ */
+a {
+	text-decoration:none;
+	color:#1a40bf;
+	font-weight: bold;
+	}
+a:link {
+    -webkit-tap-highlight-color: #335eee;
+    -webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	transition: 0.5s; }
+a:visited { color:#932aac;}
+a:hover{ color: #e309db;}
+
+/* typography __________________________ */
+
+h1, h2, h3, h4, h5, h6 { font-weight: 400;}
+h1 { font-size: 3.25rem; line-height: 0.3em; }
+h2 { font-size: 2.625rem; line-height: 0.4em; }
+h3 { font-size: 2.125rem; line-height: 0.5em; }
+h4 { font-size: 1.625rem; line-height: 0.6em; }
+h5 { font-size: 1.125rem; line-height: 0.6em; }
+h6 { font-size: 1rem; line-height: 0.52em;}
+
+ol { list-style-type: square; }
+ul { list-style-type: none; }
+p { }
+em, small { font-size: 0.5em; }
+ins { }
+mark {  }
+blockquote, q { }
+pre, code, kbd, samp {
+    line-height: 1rem;
+    font-size: 0.8rem;
+    color: #2ce2b1;
+    }
+strong { font-weight: bold; }
+details {}
+figcaption {}
+summary {}
+
+/* layout __________________________ */
+header, section, footer { padding: 1rem;}
+main {}
+header { }
+hgroup {}
+menu {}
+nav {}
+section {}
+article { width: 88%; margin: 0 auto; }
+aside {}
+figure {}
+footer { }
+hr {
+    margin: 2rem;
+    border: 0.0625rem solid #eee;
+    }
+
+/* eww, tables __________________________ */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+table {} th {} tr {} td {}
+
+
+/* forms __________________________ */
+form {}
+fieldset { border: 0;}
+legend, label {font-weight: bold;}
+input, input[type="search"], textarea { padding: 0.4rem;}
+input[type="checkbox"] {}
+input[type="radio"] {}
+button, input[type="button"], input[type="reset"], input[type="submit"],button {
+	padding: 0.6rem 2rem;
+	font-size: 1em;
+	font-weight: bold;
+	color: #2ce2b1;
+    border: 0;
+    background: #eee;
+	}
+
+/* media __________________________ */
+img {  }
+.cover {object-fit: cover; }
+audio {}
+canvas {}
+progress {}
+video {}
+
+/* more __________________________ */
+.container:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+
+/* let's be repsonsive __________________________ */
+@media screen and (min-width: 480px) {
+    article { float: left; width: 50%; margin: 0 auto; padding: 1 rem 2rem;}
+    }
+@media screen and (min-width: 900px) {
+    article { float: left; width: 40%; margin: 0 auto; padding: 1 rem 2rem;}
+    section { padding: 2rem; }
+    }
+
+/* print is dead __________________________
+
+@media print { * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
+a, a:visited { color: #444 !important; text-decoration: underline; } a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; } .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } pre, blockquote { border: 1px solid #999; page-break-inside: avoid; } thead { display: table-header-group; } tr, img { page-break-inside: avoid; } @page { margin: 0.5cm; } p, h2, h3 { orphans: 3; widows: 3; } h2, h3{ page-break-after: avoid; }
+*/
