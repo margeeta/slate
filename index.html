@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="css/vanilla.css" type="text/css" media="screen" />
 
 <body>
+     <img
+	srcset="/img/castle_large.png  1920w,
+	        /img/castle_med.png  960w,
+	        /img/castle_small.png   480w"
+	src="/img/castle_med.png"
+	alt="Castle Header image">
 <section>
+    <strong>HTML Elements:</strong>
 <h1>Title 1</h1>
 <h2>Title 2</h2>
 <h3>Title 3</h3>
@@ -36,41 +43,28 @@
     </code>
         <hr>
 </section>
-
 		<header>
 			<nav>
                 <ul>
-                    <li><a href="/link.html">a link</a></li>
-                    <li><a href="/link.html">a link</a></li>
-                    <li><a href="/link.html">a link</a></li>
+                    <li><a href="#">a link</a></li>
+                    <li><a href="#">a link</a></li>
+                    <li><a href="#">a link</a></li>
                 </ul>
 			</nav>
 		</header>
 
-<main>
 <section class="container">
- <!--
-    <picture>
-	<source
-		media="(min-width: 36em)"
-		srcset="img/asset_large.jpg  1920w,
-		        img/asset_medium.jpg  960w,
-		        img/asset_small.jpg   480w" />
-
-	<source
-		srcset="img/asset_large.jpg  822w,
-		        img/asset_medium.jpg 640w,
-		        img/asset_small.jpg  320w" />
-	<img
-		src="img/asset_medium.jpg"
-		alt="Image description." />
-</picture>
-<img src="standard.jpg" srcset="retina.jpg 2x, super-retina.jpg 3x" />
+<!-- use svg if possible -->
+   <img src="img/castle.svg" />
+ <!-- responsive images
+use for better hd display:
+<img src="standard.png" srcset="retina.png 2x, super-retina.png 3x" />
+let the browser do the work:
 <img
-	srcset="img/asset_large.jpg  1920w,
-	        img/asset_medium.jpg  960w,
-	        img/asset_small.jpg   480w"
-	src="img/asset_medium.jpg"
+	srcset="img/castle_large.jpg  1920w,
+	        img/castle_med.jpg  960w,
+	        img/castle_small.jpg   480w"
+	src="img/castle_med.jpg"
 	alt="Image alt text"> -->
     <article>
         <hgroup>
@@ -81,13 +75,12 @@
     </article>
 </section>
 
-
+    <!-- footer -->
     <footer class="container">
         <p>
-            stuff for the footer
             <small>footer info</small>
         </p>
     </footer>
-</main>
+
 	</body>
 </html>
